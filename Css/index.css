@@ -67,8 +67,6 @@ a{
     .header-block{
         font-size: x-large;
     }
-
-
 @media  screen and (max-width:1050px) {
     .head-bild{
         padding-top: 1.5%;
@@ -77,8 +75,6 @@ a{
         font-size: large;
     }
 }
-
-
 @media screen and (max-width:540px){
     .head-top{
         font-size: small;
@@ -89,6 +85,33 @@ a{
     .head-bild{
         padding-top: 0.3%;
     }
+}
+.ruta{
+    display: flex;
+    z-index: 10;
+    position: relative;
+    top: 25vh;
+    left: 60%;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 30%;
+    height: 20%;
+    h2 span{
+        display: block;
+    }
+    h2{
+        color:  rgb(35, 40, 146);
+        .h2{
+            font-size: xx-large;
+        }
+        .p{
+            color: black;
+            font-size: large;
+        }
+        
+    }
+
+    
+
 }
 
 .footer{
