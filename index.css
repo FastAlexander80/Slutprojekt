@@ -3,7 +3,6 @@ html{
 }
 body{
     margin: 0;
-    max-width: 100%;
     overflow-x: hidden;
 }
 body::-webkit-scrollbar{
@@ -14,6 +13,9 @@ header{
     position: sticky;
     color: rgb(39, 39, 129);;
 }
+h1{
+    margin: 0;
+}
 .head-top{
     display: flex;
     position: relative;
@@ -21,18 +23,9 @@ header{
     top: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.head-bild{
-    padding-top: 3%;
-    width: 5%;
-    height: 5%;
-    position: relative;
-    left: -2%;
-    
-}
+
 .head-container{
     position: relative;
-    width: 100%;
-    height: 100%;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-rows: 200% ;
@@ -46,7 +39,6 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    font-size: x-large;
     grid-row: 1;
     grid-column: 1;
     width: 100%;
@@ -56,4 +48,52 @@ a{
 .header-block:hover{
     background-color: rgb(35, 40, 146);
 }
+.berg-bild{
+    position: absolute;
+    padding-top: 3%;
+    width: 100%;
+    height: 70%;
+    aspect-ratio: unset;
+}
+@media screen and (max-width:1280px){
+    }
+    .head-bild{
+        padding-top: 0.5%;
+        position: relative;
+        left: -2%;
+        width: 5%;
+        height: 5%;   
+    }
+    .header-block{
+        font-size: x-large;
+    }
 
+
+@media  screen and (max-width:1050px) {
+    .head-bild{
+        padding-top: 1.5%;
+    }
+    .header-block{
+        font-size: large;
+    }
+}
+
+
+@media screen and (max-width:540px){
+    .head-top{
+        font-size: small;
+    }
+    .header-block{
+        font-size: xx-small;
+    }
+    .head-bild{
+        padding-top: 0.3%;
+    }
+}
+
+.footer{
+    margin-top: 100%;
+    background-color: rgb(39, 39, 129);;
+    width: 100%;
+    height: 35vh;
+}
