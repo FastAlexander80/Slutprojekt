@@ -109,11 +109,59 @@ a{
         }
         
     }
-
-    
-
 }
+.kårer{
+    display: flex;
+    position: relative;
+    top: 47vh;
+    left: 20%;
+    width: 60%;
+    height: 15vh;
+    border-radius: 50px;
+    background-color: rgb(39, 39, 129);
+    color: white;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    .text1{
+        font-size: 400%;
+    }
+    .text2{
+        display: inline-block;
+        font-size: 150%;
+        position: relative;
+        left: 5%;
+        width: 30%;
+        height: 7vh;
+        border-radius: 10px; 
+        justify-content: center;   
+        align-items: center;
+        .kommun-knapp{
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            
+        }
+        .kår-container{
+            display: none;
+            li{
+                position: relative;
+                left: -10%;
+                top: -2.5vh;
+                text-decoration: none;
+                display: block;
+                color: black;
+                background-color: rgb(69, 74, 178);
+            }
+        }
 
+    }
+    .text2:hover{
+        .kår-container{
+            display: block;
+        }
+    }
+    
+}
 .footer{
     margin-top: 100%;
     background-color: rgb(39, 39, 129);;
