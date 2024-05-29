@@ -251,6 +251,7 @@ iframe{
         display: flex;
         flex-direction: row;
         position: relative;
+        top: 10%;
         justify-content: space-evenly;
         .kontakter{
             flex-direction: column;
